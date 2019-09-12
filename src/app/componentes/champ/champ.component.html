@@ -1,0 +1,19 @@
+<h1 class="animated fadeIn fast">{{champ.name | uppercase}} <small>({{champ.fecha}})</small></h1>
+<hr>
+<div class="row  animated fadeIn">
+    <div class="col-md-4">
+          <img [src]="champ.img" class="card-img-top" alt="...">
+          <br>
+          <button class="btn btn-outline-danger btn-block" [routerLink]="['/champs']">Devolver</button>
+    </div>
+    <div class="col-md-8" >
+        <h3>{{champ.name}}</h3>
+        <hr>
+        <p>{{champ.historia}}</p>
+        <hr>
+        <h2>skins</h2>
+        <hr>
+        <img class="img-logo" [src]="champ.img2" >
+        <img class="img-logo" [src]="champ.img3">
+    </div>
+</div>

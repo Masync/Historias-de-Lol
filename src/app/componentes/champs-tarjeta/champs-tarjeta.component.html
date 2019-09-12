@@ -1,0 +1,10 @@
+<div class="card animated fadeIn fast borde" >
+  <img [src]="item.img" class="card-img-top mainImage" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name | uppercase}} <small>"{{item.seudo | titlecase}}"</small></h5>
+    <p class="card-text">"{{item.bio}}"</p>
+    <p class="card-text text-right">-{{item.region | titlecase}}</p>
+    <p class="card-text text-right"><small class="text-muted ">{{item.fecha}}</small></p>
+    <button class="btn btn-outline-primary btn-block" (click)="verCampeon()">Ver mas!</button>
+  </div>
+</div>
